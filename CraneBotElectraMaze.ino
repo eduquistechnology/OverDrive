@@ -99,7 +99,30 @@ void TurnRight(void)
   digitalWrite(rightMotorBackward,HIGH);
   digitalWrite(leftMotorBackward,LOW);
 }
-
+/********************************************* CLAW OPEN *****************************************************/
+void OpenClaw(void)
+{
+  digitalWrite(clawMotorOpen, HIGH);
+  digitalWrite(clawMotorClose, LOW);
+}
+/********************************************* CLAW CLOSE *****************************************************/
+void CLoseClaw(void)
+{
+  digitalWrite(clawMotorOpen, LOW);
+  digitalWrite(clawMotorClose, HIGH);
+}
+/********************************************* ARM UP *****************************************************/
+void ArmUp(void)
+{
+  digitalWrite(armMotorUp, HIGH);
+  digitalWrite(armMotorDown, LOW);
+}
+/********************************************* CLAW OPEN *****************************************************/
+void ArmDown(void)
+{
+  digitalWrite(armMotorUp, LOW);
+  digitalWrite(armMotorDown, HIGH);
+}
 /********************************************* STOP *****************************************************/
 void MotorStop(void)   
 {
