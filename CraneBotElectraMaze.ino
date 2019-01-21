@@ -106,7 +106,7 @@ void OpenClaw(void)
   digitalWrite(clawMotorClose, LOW);
 }
 /********************************************* CLAW CLOSE *****************************************************/
-void CLoseClaw(void)
+void CloseClaw(void)
 {
   digitalWrite(clawMotorOpen, LOW);
   digitalWrite(clawMotorClose, HIGH);
